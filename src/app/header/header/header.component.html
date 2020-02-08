@@ -1,0 +1,8 @@
+<mat-nav-list fxLayout="row" fxLayoutAlign="space-between stretch">
+
+  <a mat-list-item *ngFor="let link of menuList" routerLink="/{{link.url}}">
+    <span class="sidenav-item__text">{{link.name}}</span>
+
+  </a>
+
+</mat-nav-list>

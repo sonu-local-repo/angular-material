@@ -6,20 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatFormFieldModule, MatLabel} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import { HeaderComponent } from './header/header/header.component';
 import { EmployeeServiceService } from './employees/employee-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewEmployeeComponent } from './employees/new-employee/new-employee.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NewEmployeeComponent
+    NewEmployeeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModules,
     FlexLayoutModule,HttpClientModule,
-  
+    MatPaginatorModule,
+    FormsModule,
+    MatInputModule,
+
   ],
   providers: [EmployeeServiceService],
   entryComponents: [NewEmployeeComponent],

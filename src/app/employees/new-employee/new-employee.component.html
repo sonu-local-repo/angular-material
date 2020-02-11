@@ -2,6 +2,6 @@
     <mat-form-field>
         <input  matInput formControlName="firstName" placeholder="First Name" value="{{data.firstName}}">
     </mat-form-field>
-    <button mat-raised-button color="accent" (click)="addNewEmployee()">Submit</button>
+    <button mat-raised-button color="accent" (click)="addNewEmployee()" mat-dialog-close = "data">Submit</button>
 
 </form>

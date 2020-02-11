@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatSortModule, MatPaginatorModule, MatCheckboxModule, } from '@angular/material';
+import { MatSortModule, MatPaginatorModule, MatCheckboxModule, MatFormFieldModule, } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatCheckboxModule,
     EmployeeRouting,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    FormsModule
   ]
 })
 export class EmployeesModule { }

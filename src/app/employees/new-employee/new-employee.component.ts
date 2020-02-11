@@ -19,7 +19,7 @@ export class NewEmployeeComponent implements OnInit {
   }
   addNewEmployee(event: Event) {
     console.log("add new employee component" + this.form.value.firstName);
-    console.log("event:" + event)
+    console.log("event:" + this.data.firstName)
   }
 
 

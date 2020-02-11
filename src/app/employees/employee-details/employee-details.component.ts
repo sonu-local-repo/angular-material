@@ -13,8 +13,8 @@ export class EmployeeDetailsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.employeeService.getCustomer(this.activatedRoute.snapshot.paramMap.get('id'))
-    .subscribe(data => console.log(data))
+    // this.employeeService.getCustomer(this.activatedRoute.snapshot.paramMap.get('id'))
+    // .subscribe(data => console.log(data))
   }
 
 

@@ -67,7 +67,8 @@ const materialModules: any[] = [
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatFormFieldModule
 
 ]
 @NgModule({
